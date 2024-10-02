@@ -1,3 +1,8 @@
+/**
+ * @copyright 2024 Shravani Sawant
+ * @license Apache-2.0
+ */
+
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 
