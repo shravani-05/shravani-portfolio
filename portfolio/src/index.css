@@ -98,3 +98,9 @@ buttons
     @apply h-11 bg-purple-400 text-zinc-900 hover:bg-purple-300
     active:bg-purple-500 
 }
+
+/*about*/
+.section{
+    @apply pt-5 lg:pt-10
+
+}
