@@ -26,9 +26,9 @@ const Hero = () => {
             
             </span>
         </span>
-        Hey!! Thanks for stopping by!!
+        <p className="text-2xl font-mono overflow-hidden whitespace-nowrap border-r-2 border-black animate-typewriter">Hey!! Thanks for stopping by!!</p>
     </div>
-   <h2 className='headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10 te'>
+   <h2 className='headline-1 max-w-[50ch] sm:max-w-[40ch] lg:max-w-[60ch] mt-5 mb-8 lg:mb-10 te'>
     Passionate Computer Engineer with a Passionate for 
     Problem-Solving and a Mindset for Innovation.
     </h2>
@@ -57,6 +57,7 @@ const Hero = () => {
         </figure>
     </div>
     </div>
+
     </section>
     
     

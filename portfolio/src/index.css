@@ -18,7 +18,7 @@ utilities
 /*
 typography
 */
-.headline-1 {
+.headline-1 , headline-2{
     @apply max-w-max;
     background: -webkit-linear-gradient(0deg, #fafafa, #a1a1a1);
     -webkit-background-clip: text;
@@ -30,7 +30,9 @@ typography
     lg:leading-[1.15]
 }
 
-
+.headline-2{
+    @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+}
 
 html {
     scroll-behavior: smooth;
@@ -98,9 +100,27 @@ buttons
     @apply h-11 bg-purple-400 text-zinc-900 hover:bg-purple-300
     active:bg-purple-500 
 }
-
+.btn-primary1 {
+    @apply h-12 max-w-24 text-zinc-50 bg-purple-400 active:bg-purple-600 hover:bg-purple-600
+}
 /*about*/
 .section{
     @apply pt-5 lg:pt-10
 
+}
+
+/*text field*/
+
+.label{
+    @apply block text-zinc-300 text-sm font-normal mb-2
+}
+.text-field{
+    @apply block outline-none w-full px-3 py-3  text-sm 
+    bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent
+    transition-shadow hover:ring-zinc-100 focus:ring-sky-400
+    focus:ring-2
+}
+
+.title-1{
+    @apply text-[22px] font-normal
 }

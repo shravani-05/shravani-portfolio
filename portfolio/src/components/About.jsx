@@ -35,6 +35,7 @@ export const About = () => {
       <div className='container'>
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
         <p className=' text-zinc-300 text-lg text-justify'>
+          <h2 className='headline-2 text-center'>About me</h2><br />
         Hello! I’m Shravani, an MTech student in Computer Engineering 
         who loves diving into the world of technology. With hands-on 
         experience in blockchain and artificial intelligence projects,
