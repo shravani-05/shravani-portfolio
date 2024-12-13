@@ -124,3 +124,19 @@ buttons
 .title-1{
     @apply text-[22px] font-normal
 }
+
+
+/*project slider*/
+
+/* Hide scrollbar */
+.project-slider .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-slider .slick-prev,
+  .project-slider .slick-next {
+    z-index: 1;
+    color: #000;
+  }
+  

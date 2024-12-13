@@ -40,22 +40,22 @@ const Contactme = () => {
     <section
     id='contact'
     className='section'>
-
+<br /><br />
         <div className="container lg:grid lg:grid-cols-2
         lg:items-stretch">
             <div className="mb-12 lg:mb-0 lg-flex lg-flex-col mr-0 ml-auto justify-end">
-
-                <h2 className="headline-2 lg:max-w-[50ch] text-right">
+                
+                <h2 className="headline-2 lg:max-w-[50ch] ">
                     Contact Me
                 </h2>
     <br />
-                <p className="text-zinc-100 mt-3 mb-8 max-w-[50ch] lg:max-w-[50ch] text-right">
+                <p className="text-zinc-100 mt-3 mb-8 max-w-[50ch] lg:max-w-[50ch]  ">
                     Feel free to get in touch with me. I am always open to discuss new 
                     technologies,projects,creative ideas or opportunities to be a part of your vision. Let's contribute together!!!
                     
                 </p>
                     <br />
-                <div className="flex items-center gap-3 mt-auto justify-end">
+                <div className="flex items-center gap-3 mt-auto ">
                     {socialLinks.map(({href,icon},key)=>
                     (
                         <a 
