@@ -14,7 +14,7 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contactme from "./components/Contactme";
 import Footer from "./components/Footer";
-import Work2 from './components/Work2';
+import Work2 from './components/Work';
 
 const App = () => {
     return (

@@ -9,8 +9,22 @@
 
 import { ButtonPrimary } from './Button';
 import React from 'react'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const Hero = () => {
+    const settings = {
+        infinite: true,  // Enable looping
+        autoplay: true,  // Enable auto-sliding
+        autoplaySpeed: 2000, // Set speed for autoplay in milliseconds
+        dots: false,      // Disable dots navigation
+        arrows: false,    // Disable arrows (next/prev)
+        speed: 500,       // Transition speed
+        slidesToShow: 1,  // Show 1 image at a time
+        slidesToScroll: 1, // Scroll 1 image at a time
+      };
   return (
 
     <section 
@@ -35,16 +49,15 @@ const Hero = () => {
     Problem-Solving and a Mindset for Innovation.
     </h2>
     <div className="flex items-center gap-3">
+    <a href="/Shravani_Resume.pdf" download="Shravani_Resume.pdf">
     <ButtonPrimary 
-        label="Download CV"
+        label="Download Resume"
         icon="download"
         classes=""
     />
+</a>
     
-</div>
-
-
-
+        </div>
     </div>
 
     <div className=" hidden lg:block">
@@ -57,7 +70,21 @@ const Hero = () => {
             className="w-full"
             />
         </figure>
-    </div>
+    </div> 
+    {/* <div className="hidden lg:block">
+          <Slider {...settings}>
+            <div>
+              <img src="/img/portfolio.png" width={656} height={800} alt="Image 1" className="w-full" />
+            </div>
+            <div>
+              <img src="/img/portfolio2.png" width={656} height={800} alt="Image 2" className="w-full" />
+            </div>
+            <div>
+              <img src="/img/portfolio3.png" width={656} height={800} alt="Image 3" className="w-full" />
+            </div>
+          </Slider>
+        </div> */}
+    
     </div>
 
     </section>
