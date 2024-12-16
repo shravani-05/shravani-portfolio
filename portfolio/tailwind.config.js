@@ -19,6 +19,19 @@ export default {
           '0%, 100%': { borderColor: 'transparent' },
           '50%': { borderColor: 'black' },
         },
+        gradientFlow: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+        rotatePing: {
+          '0%': { transform: 'rotate(-175deg) scale(1)' },
+          '100%': { transform: 'rotate(-175deg) scale(2)' },
+        },
+      },
+      animation: {
+        gradientFlow: 'gradientFlow 3s ease-in-out infinite',
+        rotatePing: 'rotatePing 6s infinite',
       },
 
     },

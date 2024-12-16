@@ -13,7 +13,7 @@ const works = [
   },
   {
     imgSrc: '/img/bbdim.png',
-    title: 'Digital Identity Using BlockChain',
+    title: 'Digital Identity Management Using BlockChain',
     tags: ['Blockchain'],
     projectLink: 'https://github.com/shravani-05/Digital-Identity-Management-backend',
   },
@@ -31,13 +31,13 @@ const works = [
   },
   {
   imgSrc: '/img/context.png',
-  title: 'Context Sensitive Dictionary',
-  tags: ['NLP','NN'],
+  title: 'Context Sensitive Dictionary with NLP',
+  tags: ['Natural Language Processing'],
   projectLink: 'https://github.com/shravani-05/Context-Sensitive-Dictionary',
   },
   {
     imgSrc: '/img/cash.png',
-    title: 'Cash Flow Minimizer System',
+    title: 'Cash Flow Minimizer System with DSA',
     tags: ['Data Structures and Algorithms'],
     projectLink: 'https://github.com/shravani-05/Cash-Flow-Minimizer',
   },
@@ -57,7 +57,7 @@ const Work2 = () => {
     slidesToShow: 3, // Number of slides visible at a time
     slidesToScroll: 1, // Scroll one slide at a time
     autoplay: true, // Automatically scroll
-    autoplaySpeed: 1000, // Time between auto scrolls (in ms)
+    autoplaySpeed: 2000, // Time between auto scrolls (in ms)
     pauseOnHover: true, // Pause scrolling on hover
     responsive: [
       {

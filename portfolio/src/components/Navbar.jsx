@@ -44,28 +44,28 @@ const Navbar = ({ navOpen }) => {
     {
       label: 'Home',
       link: '#home',
-      className: 'nav-link active',
+      className: 'nav-link active hover:bg-zinc-50 hover:text-zinc-900 rounded-xl',
       ref: lastActiveLink
     },
     {
       label: 'About',
       link: '#about',
-      className: 'nav-link'
+      className: 'nav-link active hover:bg-zinc-50 hover:text-zinc-900 rounded-xl'
     },
     {
       label: 'Skills',
       link: '#skills',
-      className: 'nav-link'
+      className: 'nav-link active hover:bg-zinc-50 hover:text-zinc-900 rounded-xl'
     },
     {
       label: 'Project',
       link: '#work',
-      className: 'nav-link'
+      className: 'nav-link active hover:bg-zinc-50 hover:text-zinc-900 rounded-xl'
     },
     {
       label: 'Contact me',
       link: '#contact',
-      className: 'nav-link md:hidden'
+      className: 'nav-link md:hidden hover:bg-zinc-50 hover:text-zinc-900 rounded-xl'
     }
   ];
 

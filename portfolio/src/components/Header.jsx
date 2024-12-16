@@ -15,7 +15,7 @@ const Header = () => {
         {/* Logo */}
         <h1>
           <a href="/">
-            <img src="/img/fav.png" width={40} height={40} alt="Shravani" />
+            <img  src="/img/fav.png" width={40} height={40} alt="Shravani" />
           </a>
         </h1>
 

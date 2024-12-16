@@ -28,6 +28,10 @@ const sitemap = [
   
   const socials = [
     {
+      label: 'LeetCode',
+      href: 'https://leetcode.com/u/shravaniii05/'
+    },
+    {
       label: 'GitHub',
       href: 'https://github.com/shravani-05'
     },
@@ -43,10 +47,7 @@ const sitemap = [
       label: 'Instagram',
       href: 'https://www.instagram.com/shravaniii.05/'
     },
-    {
-      label: 'LeetCode',
-      href: 'https://leetcode.com/u/shravaniii05/'
-    }
+    
   ];
 import React from 'react'
 import { ButtonPrimary } from './Button';
@@ -70,7 +71,7 @@ const Footer = () => {
 
                 <div className="grid grid-cols-2 gap-4 lg:pl-20">
                     <div>
-                        <p className="mb-2">Portfolio</p>
+                        <p className="mb-5 text-zinc-50 text-xl" ><b>Portfolio</b></p>
 
                             <ul>
                                 {sitemap.map(({label, href},key)=>
@@ -89,7 +90,7 @@ const Footer = () => {
                     </div>   
                     
                     <div>
-                        <p className="mb-2">Socials</p>
+                        <p className="mb-5 text-zinc-50 text-xl"><b>Socials</b></p>
 
                             <ul>
                                 {socials.map(({label, href},key)=>
