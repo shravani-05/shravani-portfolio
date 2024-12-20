@@ -14,10 +14,19 @@ const Header = () => {
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-5 md:grid md:grid-cols-[1fr,3fr,1fr]">
         {/* Logo */}
         <h1>
-          <a href="/">
-            <img  src="/img/fav.png" width={40} height={40} alt="Shravani" />
-          </a>
-        </h1>
+      <a
+        href="#home"
+        onClick={(e) => {
+          e.preventDefault(); // Prevent default anchor behavior
+          const homeSection = document.getElementById("home"); // Get the home section
+          if (homeSection) {
+            homeSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the home section
+          }
+        }}
+      >
+        <img src="/img/fav.png" width={40} height={40} alt="Shravani" />
+      </a>
+    </h1>
 
         <div className="relative md:justify-self-center">
           {/* Menu Button */}
@@ -33,7 +42,7 @@ const Header = () => {
 
         <a
           href="#contact"
-          className="btn btn-secondary max-md:hidden md:justify-self-end"
+          className="btn btn-secondary max-md:hidden md:justify-self-end cursor-pointer hover:bg-gradient-to-t from-purple-500  to-purple-300 transition-all duration-300 ease-in-out "
         >
           Contact me
         </a>
