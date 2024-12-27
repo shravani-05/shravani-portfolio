@@ -33,6 +33,7 @@ export const About = () => {
       className='section'
     >
       <div className='container'>
+        <br /><br /><br />
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
         <p className=' text-zinc-300 text-lg text-justify'>
           <h2 className='headline-2 text-center'>About me</h2><br />

@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const works = [
   {
     imgSrc: '/img/exam.png',
-    title: 'Online Exam Management System',
+    title: 'Online Exam Management System using Python',
     tags: ['Python'],
     projectLink: 'https://github.com/shravani-05/ExamPortal',
   },
@@ -19,13 +19,13 @@ const works = [
   },
   {
     imgSrc: '/img/complaint.png',
-    title: 'Complaint Management System',
+    title: 'Complaint Management System using Django',
     tags: ['Python with Django'],
     projectLink: 'https://github.com/shravani-05/ComplaintManagementSystem',
   },
   {
     imgSrc: '/img/disease.png',
-    title: 'Multiple Disease Prediction System',
+    title: 'Multiple Disease Prediction System using AI',
     tags: ['Artificial Intelligence'],
     projectLink: 'https://github.com/shravani-05/MultipleDiseasePredictionSystem',
   },
@@ -50,51 +50,124 @@ const works = [
 ];
 
 const Work2 = () => {
-  const settings = {
-    dots: false, // Disable dots below the carousel
-    infinite: true, // Enable infinite scrolling
-    speed: 500, // Transition speed
-    slidesToShow: 3, // Number of slides visible at a time
-    slidesToScroll: 1, // Scroll one slide at a time
-    autoplay: true, // Automatically scroll
-    autoplaySpeed: 2000, // Time between auto scrolls (in ms)
-    pauseOnHover: true, // Pause scrolling on hover
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+//   const settings = {
+//     dots: false, // Disable dots below the carousel
+//     infinite: true, // Enable infinite scrolling
+//     speed: 500, // Transition speed
+//     slidesToShow: 3, // Number of slides visible at a time
+//     slidesToScroll: 1, // Scroll one slide at a time
+//     autoplay: true, // Automatically scroll
+//     autoplaySpeed: 2000, // Time between auto scrolls (in ms)
+//     pauseOnHover: true, // Pause scrolling on hover
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//     ],
+//   };
 
-  return (
-    <section id="work" className="section">
-      <br /><br />
-      <div className="container">
-        <h2 className="headline-2 mb-8 text-center">My Project Highlights</h2>
-        <Slider {...settings} className="project-slider">
-          {works.map(({ imgSrc, title, tags, projectLink }, index) => (
-            <div key={index} className="px-4">
-              <Projectcard
-                imgSrc={imgSrc}
-                title={title}
-                tags={tags}
-                projectLink={projectLink}
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </section>
-  );
+//   return (
+//     <section id="work" className="section">
+//       <br /><br />
+//       <div className="container">
+//         <h2 className="headline-2 mb-8 text-center">My Project Highlights</h2>
+//         <Slider {...settings} className="project-slider">
+//           {works.map(({ imgSrc, title, tags, projectLink }, index) => (
+//             <div key={index} className="px-4">
+//               <Projectcard
+//                 imgSrc={imgSrc}
+//                 title={title}
+//                 tags={tags}
+//                 projectLink={projectLink}
+//               />
+//             </div>
+//           ))}
+//         </Slider>
+//       </div>
+//     </section>
+//   );
+// };
+// const settings = {
+//   dots: false,
+//   infinite: true,
+//   speed: 500,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   pauseOnHover: true,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 2,
+//       },
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 1,
+//       },
+//     },
+//   ],
+// };
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3, // Desktop: 3 slides
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2, // Tablet: 2 slides
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1, // Mobile: 1 slide
+        arrows: false, // Hide arrows on smaller screens for simplicity
+      },
+    },
+  ],
+};
+
+return (
+  <section id="work" className="section">
+    <br /><br />
+    <div className="container">
+      <h2 className="headline-2 mb-8 text-center">My Project Highlights</h2>
+      <Slider {...settings} className="project-slider">
+        {works.map(({ imgSrc, title, tags, projectLink }, index) => (
+          <div key={index} className="px-4 h-full">
+            <Projectcard
+              imgSrc={imgSrc}
+              title={title}
+              tags={tags}
+              projectLink={projectLink}
+              classes="h-full" // Ensures all cards have uniform height
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  </section>
+);
 };
 
 export default Work2;
