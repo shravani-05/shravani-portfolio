@@ -15,6 +15,8 @@ import Work from "./components/Work";
 import Contactme from "./components/Contactme";
 import Footer from "./components/Footer";
 import Work2 from './components/Work';
+import './index.css';
+
 
 const App = () => {
     return (
