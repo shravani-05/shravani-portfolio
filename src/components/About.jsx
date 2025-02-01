@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const aboutItems = [
   { 
-    label: "General", 
+    label: "Overview", 
     description: "Hello! I’m Shravani, an MTech student in Computer Engineering who is passionate about technology. I have hands-on experience in Blockchain and AI projects, offering unique insights into solving challenges. My skills include web development with HTML, CSS, JavaScript, Tailwind CSS, and React, as well as a solid grasp of computer science fundamentals like Data Structures, Algorithms, and Operating Systems. Driven by curiosity, I seek to contribute to technological advancements. I thrive in dynamic, collaborative environments where creativity and technical expertise come together to solve real-world problems. I stay committed to learning and keeping up with emerging trends to deliver innovative solutions." 
   },
 
