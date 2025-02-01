@@ -7,5 +7,6 @@ export default defineConfig({
     // base:"shravani-portfolio", 
     server: {
         open: true, // Automatically open the browser
+        base: './', 
     },
 });
