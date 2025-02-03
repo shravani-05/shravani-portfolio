@@ -34,22 +34,13 @@ const Hero = () => {
     <div className="container  lg: grid lg:grid-cols-2
     items-center lg:gap-x-7 lg:gap-y-0" >
     <div>
-    {/* <div className="flex items-center gap-7 text-zinc-700 text-2xl tracking-wide">
-        <span className=" relative w-2 h-2 bg-purple-800 transform rotate-45">
-            <span className="absolute inset-0 bg-white animate-ping transform -rotate-175">
-            
-            </span>
-        </span>
-        <p className="">Hey!! Thanks for stopping by!!</p>
-        
-
-    </div> */}
+    
     <div className="flex items-center gap-7 text-zinc-700 text-2xl tracking-wide">
-      <span className="relative w-2 h-2 bg-purple-800 transform rotate-45">
-        <span className="absolute inset-0 bg-white animate-ping transform -rotate-175"></span>
+      <span className="relative w-2.5 h-2.5 bg-purple-800 transform rotate-90 ">
+      <span className="absolute inset-0 bg-white animate-ping transform rotate-90"></span>
       </span>
       <p className="bg-gradient-to-r from-purple-900 to-yellow-500 text-transparent bg-clip-text bg-[length:200%_200%] animate-gradientFlow">
-        <i>Hey!! Thanks for stopping by!!</i>
+        <i>Hey!! Thanks for stopping by :))</i>
       </p>
     </div>
    <h2 className='headline-1 max-w-[50ch] sm:max-w-[40ch] lg:max-w-[60ch] mt-5 mb-8 lg:mb-10 te'>
@@ -78,20 +69,7 @@ const Hero = () => {
             />
         </figure>
     </div> 
-    {/* <div className="hidden lg:block">
-          <Slider {...settings}>
-            <div>
-              <img src="/img/portfolio.png" width={656} height={800} alt="Image 1" className="w-full" />
-            </div>
-            <div>
-              <img src="/img/portfolio2.png" width={656} height={800} alt="Image 2" className="w-full" />
-            </div>
-            <div>
-              <img src="/img/portfolio3.png" width={656} height={800} alt="Image 3" className="w-full" />
-            </div>
-          </Slider>
-        </div> */}
-    
+       
     </div>
 
     </section>

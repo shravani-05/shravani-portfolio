@@ -79,6 +79,7 @@ const Footer = () => {
                                     <li key={key}>
                                            <a 
                                            href={href} 
+                                           target="_blank"
                                            className="block text-sm text-zinc-50
                                            py-1 transition-colors hover:text-zinc-500"
                                            >

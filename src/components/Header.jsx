@@ -40,12 +40,25 @@ const Header = () => {
           <Navbar navOpen={navOpen} />
         </div>
 
-        <a
-          href="#contact"
-          className="btn btn-secondary max-md:hidden md:justify-self-end cursor-pointer hover:bg-gradient-to-t from-purple-500  to-purple-300 transition-all duration-300 ease-in-out "
-        >
-          Contact me
-        </a>
+        {/* <a
+  href="#contact"
+  className="btn btn-secondary max-md:hidden md:justify-self-end cursor-pointer hover:bg-gradient-to-t from-purple-500 to-purple-300 transition-all duration-100 ease-in-out"
+  style={{
+    transition: 'background-color 6s ease-in-out' // Inline style for smooth transition
+  }}
+>
+  Contact me
+</a> */}
+  <a
+  href="#contact"
+  className="hidden lg:inline-block group relative overflow-hidden rounded-2xl border border-purple-100 px-3 py-2 font-medium text-zinc-400 max-w-xs ml-auto"
+  style={{ maxWidth: '120px' }} // Set max-width to 120px
+>
+  <span className="absolute left-0 top-0 mb-0 flex h-full w-0 translate-x-0 transform bg-purple-400 opacity-90 transition-all duration-300 ease-out group-hover:w-full"></span>
+  <span className="relative group-hover:text-zinc-300">Contact me</span>
+</a>
+
+
       </div>
     </header>
   );

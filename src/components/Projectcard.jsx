@@ -9,54 +9,43 @@
 //     classes
 // }) => {
 //   return (
-//     <div className={    "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 ring-1 ring-inset ring-zinc-50 transition-colors w-100 h-100 " + classes}>
-//         <figure className="w-full aspect-square rounded-lg overflow-hidden mb-4">
-//             <img 
+//     <div className={`relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 ring-1 ring-inset ring-zinc-50 transition-colors w-full h-full ${classes} group`}>
+//       <div className="flex flex-col h-full justify-start">
+//         <figure className="w-full aspect-square rounded-lg overflow-hidden mb-4 flex-shrink-0">
+//           <img 
 //             src={imgSrc}
 //             alt={title}
 //             loading="lazy"
 //             className="w-full h-full object-cover"
-//             />
+//           />
 //         </figure>
 
-//         <div className="flex items-center justify-between gap-4">
-//             <div>
-//                 <h3 className="title-1 mb-3">
-//                     {title}
-//                 </h3>
-//                 <div className="flex flex-wrap items-center gap-2">
-//                     {tags.map((label, key) => (
-//                         <span
-//                             key={key}
-//                             className="h-8 text-sm text-zinc-50 bg-zinc-700
-//                             grid items-center justify-center px-3 rounded-lg"
-//                         >
-//                             {label}
-//                         </span>
-//                     ))}
-//                 </div>
-//             </div>
-
-//             {/* <div className="w-11 h-11 rounded-lg grid place-items-center bg-purple-500
-//             text-zinc-900 shrink-0">
-//                 <span 
-//                 className="material-symbols-rounded"
-//                 aria-hidden
-//                 >
-//                     arrow-outward
-//                 </span>
-//             </div> */}
+//         <div className="flex flex-col flex-grow justify-start">
+//           <h3 className="title-1 mb-3 text-left">
+//             {title}
+//           </h3>
+//           <div className="flex flex-wrap items-center gap-2 mb-3">
+//             {tags.map((label, key) => (
+//               <span
+//                 key={key}
+//                 className="h-8 text-sm text-zinc-50 bg-zinc-700 grid items-center justify-center px-3 rounded-lg group-hover:bg-purple-400 group-hover:text-zinc-50 transition-colors"
+//               >
+//                 {label}
+//               </span>
+//             ))}
+//           </div>
 //         </div>
+//       </div>
 
-//         <a 
+//       <a 
 //         href={projectLink}
 //         target="_blank" 
 //         rel="noopener noreferrer"
 //         className="absolute inset-0"
-//         ></a>
+//       ></a>
 //     </div>
-//   )
-// }
+//   );
+// };
 
 // Projectcard.propTypes = {
 //     imgSrc: PropTypes.string.isRequired,
@@ -64,13 +53,13 @@
 //     tags: PropTypes.array.isRequired,
 //     projectLink: PropTypes.string,
 //     classes: PropTypes.string
-// }
+// };
 
 // export default Projectcard;
 
+
 import React from 'react';
 import PropTypes from 'prop-types';
-
 
 const Projectcard = ({
     imgSrc,
@@ -80,8 +69,8 @@ const Projectcard = ({
     classes
 }) => {
   return (
-    <div className={`relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 ring-1 ring-inset ring-zinc-50 transition-colors w-full h-full ${classes}`}>
-      <div className="flex flex-col h-full">
+    <div className={`relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 ring-1 ring-inset ring-zinc-50 transition-colors w-full h-full ${classes} group`}>
+      <div className="flex flex-col h-full justify-start">
         <figure className="w-full aspect-square rounded-lg overflow-hidden mb-4 flex-shrink-0">
           <img 
             src={imgSrc}
@@ -91,15 +80,15 @@ const Projectcard = ({
           />
         </figure>
 
-        <div className="flex flex-col flex-grow">
-          <h3 className="title-1 mb-3">
+        <div className="flex flex-col flex-grow justify-start">
+          <h3 className="title-1 mb-3 text-left"> {/* Ensure text-left is applied */}
             {title}
           </h3>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             {tags.map((label, key) => (
               <span
                 key={key}
-                className="h-8 text-sm text-zinc-50 bg-zinc-700 grid items-center justify-center px-3 rounded-lg"
+                className="h-8 text-sm text-zinc-50 bg-zinc-700 grid items-center justify-center px-3 rounded-lg group-hover:bg-purple-400 group-hover:text-zinc-50 transition-colors"
               >
                 {label}
               </span>

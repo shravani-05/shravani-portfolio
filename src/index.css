@@ -86,7 +86,7 @@ buttons
 }
 
 .btn-secondary{
-    @apply bg-zinc-50 active:bg-zinc-50/80
+    @apply bg-zinc-50 active:bg-zinc-50/80 
 }
 
 .btn .material-symbols-rounded{
@@ -122,7 +122,7 @@ buttons
 }
 
 .title-1{
-    @apply text-[22px] font-normal text-center
+    @apply text-[20px] font-normal text-left
 }
 
 
