@@ -157,12 +157,12 @@ const Hero = () => {
                 </div>
 
                 {/* Text Section */}
-                <div className="text-center lg:text-left">
+                <div className="text-left">
                     <div className="flex items-center gap-7 text-zinc-700 text-2xl tracking-wide">
                         <span className="relative w-2.5 h-2.5 bg-purple-800 transform rotate-90">
                             <span className="absolute inset-0 bg-white animate-ping transform rotate-90"></span>
                         </span>
-                        <p className="bg-gradient-to-r from-purple-900 to-yellow-500 text-transparent bg-clip-text bg-[length:200%_200%] animate-gradientFlow">
+                        <p className="text-sm sm:text-base lg:text-lg xl:text-xl bg-gradient-to-r from-purple-900 to-yellow-500 text-transparent bg-clip-text bg-[length:200%_200%] animate-gradientFlow">
                             <i>Hey!! Thanks for stopping by :))</i>
                         </p>
                     </div>
