@@ -101,7 +101,7 @@ buttons
     active:bg-purple-500 
 }
 .btn-primary1 {
-    @apply h-12 max-w-24 text-zinc-50 bg-purple-400 active:bg-purple-600 hover:bg-purple-600
+    @apply h-12 max-w-20 text-zinc-50 bg-purple-500 active:bg-purple-600 hover:bg-purple-600
 }
 /*about*/
 .section{

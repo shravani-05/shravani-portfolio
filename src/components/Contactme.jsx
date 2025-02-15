@@ -156,7 +156,7 @@ const Contactme = () => {
             id="message"
             placeholder="Enter your message"
             required
-            className="text-field h-32 w-full md:w-[500px] lg:w-[465px] border border-gray-300 p-3 rounded-lg bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-purple-600 resize-none"
+            className="text-field h-32 w-full md:w-[500px] lg:w-[465px] p-3 rounded-lg bg-white shadow-md focus:outline-none focus:ring-2  resize-none"
           />
 
           </div>
