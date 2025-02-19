@@ -4,14 +4,13 @@ const sitemap = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Work', href: '#work' },
-  { label: 'Reviews', href: '#reviews' },
   { label: 'Contact me', href: '#contact' },
 ];
 
 const socials = [
-  { label: 'LeetCode', href: 'https://leetcode.com/u/shravaniii05/' },
-  { label: 'GitHub', href: 'https://github.com/shravani-05' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/shravanisawant/' },
+  { label: 'GitHub', href: 'https://github.com/shravani-05' },
+  { label: 'LeetCode', href: 'https://leetcode.com/u/shravaniii05/' },
   { label: 'Twitter X', href: 'https://x.com/shravani0507' },
   { label: 'Instagram', href: 'https://www.instagram.com/shravaniii.05/' },
 ];
