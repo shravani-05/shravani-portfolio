@@ -38,9 +38,9 @@ const skillItems = [
     description: "The versatility of C++ in object-oriented programming motivated me to explore its powerful features for complex software development.",
   },
   {
-    imgSrc: "/img/python.png",
-    label: "Python",
-    description: "Its simplicity and versatility inspired me to learn Python, allowing me to tackle diverse tasks from scripting to data analysis efficiently.",
+    imgSrc: "/img/java.png",
+    label: "Java",
+    description: "Java's robustness and scalability inspired me to master it, enabling me to build efficient and cross-platform applications seamlessly.",
   },
   {
     imgSrc: "/img/sql-logo.png",
