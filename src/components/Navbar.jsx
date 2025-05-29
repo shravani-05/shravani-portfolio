@@ -12,17 +12,7 @@ const Navbar = ({ navOpen }) => {
 
   const initActiveBox = () => {
    
-    // activeBox.current.style.top = lastActiveLink.current.
-    // offsetTop + 'px';
     
-    // activeBox.current.style.left = lastActiveLink.current.
-    // offsetLeft + 'px';
-    
-    // activeBox.current.style.width = lastActiveLink.current.
-    // offsetWidth + 'px';
-    
-    // activeBox.current.style.height = lastActiveLink.current.
-    // offsetHeight+ 'px';
 
 
   }

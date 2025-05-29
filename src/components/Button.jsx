@@ -3,16 +3,9 @@
  * @license Apache-2.0
  */
 
-/*
-node modules
-*/
+
 import PropTypes from 'prop-types';
 import React from 'react'
-
-/**
- * 
- * primary button
- */
 
 const ButtonPrimary = ({
     href,
